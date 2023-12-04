@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #6200EA, #9c4dcc);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Fill available space in the container */
+    padding: 1em;
+    margin: 1em;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+button {
+    background-color: #6200EA;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+button:hover {
+    background-color: #9c4dcc;
+    transform: scale(1.1);
+}
+
+#installation-info {
+    background-color: #1f1f1f;
+    border: 1px solid #404040;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px 20px;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.1);
+}
+
+#installation-info h2 {
+    color: #6200EA;
+}
+
+#installation-info p {
+    color: #bbb;
+}
+
+#installation-info ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#installation-info li {
+    color: #999;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 12px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .content-container {
+        height: auto;
+    }
+
+    .button-container {
+        margin-left: 0;
+    }
+
+    button {
+        padding: 20px;
+    }
+}
